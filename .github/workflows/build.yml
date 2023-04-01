@@ -1,4 +1,4 @@
-name: Build stellaris-unofficial
+name: Build stellaris-UNOFFICIAL
 
 on:
   workflow_dispatch:
@@ -13,11 +13,11 @@ jobs:
     - name: Checkout zipper
       uses: actions/checkout@v3
       with:
-        repository: lemniskett/AnyKernel3
+        repository: sen-tenz/AnyKernel3
         path: zipper
 
     - name: Android kernel build
-      uses: lemniskett/android-kernel-actions@master
+      uses: sen-tenz/android-kernel-actions@master
       id: build
       env:
         NAME: stellaris-unofficial
