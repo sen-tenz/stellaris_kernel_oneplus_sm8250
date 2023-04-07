@@ -17,13 +17,13 @@ jobs:
         path: zipper
 
     - name: Android kernel build
-      uses: sen-tenz/android-kernel-actions@master
+      uses: sen-tenz/android-kernel-actions@neutron
       id: build
       env:
         NAME: Stellaris-UNOFFICIAL
       with:
         arch: arm64
-        compiler: neutron-clang/latest/binutils
+        compiler: neutron-clang/latest
         defconfig: vendor/kona-perf_defconfig
         image: Image.gz
         dtbo: true
