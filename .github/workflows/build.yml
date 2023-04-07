@@ -26,6 +26,8 @@ jobs:
         compiler: neutron-clang/latest/binutils
         defconfig: vendor/kona-perf_defconfig
         image: Image.gz
+        dtbo: true
+        dtb: false
 
     - name: Release build
       uses: appleboy/telegram-action@master
